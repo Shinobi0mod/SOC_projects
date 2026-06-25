@@ -24,3 +24,7 @@ I see successful login on admin account (name admin_lab)
 пользователь успешно вошёл после нескольких неудачных попыток
 признаки компрометации отсутствуют
 
+Verdict: False Positive.
+Multiple failed logon attempts were generated locally from the same host (::1). A successful logon followed the failed attempts using the same account (admin_lab). No evidence of brute-force activity from a remote source or account compromise was identified.
+Root Cause:
+User entered an incorrect password multiple times before successfully authenticating on the local workstation.
